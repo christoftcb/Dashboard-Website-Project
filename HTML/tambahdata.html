@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/tambahdata.css">
+</head>
+<body onLoad="initClock()">
+    <div class="page">
+        <div class="header">
+        <div class="text">
+            <p>Perusahaan X</p>
+        </div>
+
+        <div id="timedate">
+            <a id="mon">January</a>&nbsp;
+            <a id="d">1</a>,&nbsp;
+            <a id="y">0</a>&nbsp;
+            <a id="h">12</a> :
+            <a id="m">00</a>:
+            <a id="s">00</a>
+          </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><b>Administrator</b></button>
+            <div class="dropdown-content">
+              <a href="homenotlogin.html">Sign out</a>
+              <a href="/HTML/changepass.html">Change Password</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="navbarlist">
+                <li><a href="/HTML/homesignedin.html"><button>Dashboard</button></a></li>
+                <li><a href="/HTML/managedata.html"><button>Manajemen Karyawan</button></a></li>
+                <li><a href="/HTML/tentangperusahaan.html"><button>Tentang Perusahaan</button></a></li>
+            </div>
+        </div>
+
+    <div class="right">
+        <div class="wrapper">
+            <div class="title">
+            <h1>Data Manager</h1>
+            </div>
+            <hr>
+            <div class="form">
+            <form id="subform">
+                <label for="nokaryawan">No Karyawan</label>
+                <br>
+                <input type="number" id="nokaryawan" name="nokaryawan" placeholder="Masukkan nomor karyawan">
+                <br><br>
+                <label for="nama">Nama Karyawan</label>
+                <br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama karyawan">
+                <br><br>
+                <label for="gaji">Gaji Karyawan</label>
+                <br>
+                <input type="number" step="any" id="gaji" name="gaji" placeholder="Masukkan gaji karyawan">
+                <br><br>
+
+                <label for="" id="jabatanmenu">Jabatan</label><br>
+                <select name="jabatan" id="jabatan">
+                    <option value="0">Silahkan Pilih</option>
+                    <option value="1">Bos</option>
+                    <option value="2">Supervisor</option>
+                    <option value="3">Karyawan</option>
+                </select>
+                <br><br>
+
+                <label for="" id="tambahmenu">Ditambahkan Oleh</label><br>
+                <select name="tambah" id="tambah">
+                    <option value="0">Silahkan Pilih</option>
+                    <option value="1">Administrator</option>
+                    <option value="2">Bos</option>
+                    <option value="3">Supervisor</option>
+                </select>
+                <br><br>
+
+                <label for="tanggal">Tanggal Ditambahkan</label>
+                <br>
+                <input type="date" id="tanggal" name="tanggal" placeholder="Tanggal data ini ditambahkan">
+                <br><br>
+                <input type="submit" id="formButton" value="Add">
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="/JS/JQuery.js"></script>
+<script src="/JS/tambahdata.js"></script>
+</html>

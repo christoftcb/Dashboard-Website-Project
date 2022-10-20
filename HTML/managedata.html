@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/managedata.css">
+</head>
+<body onLoad="initClock()">
+    <div class="page">
+        <div class="header">
+        <div class="text">
+            <p>Perusahaan X</p>
+        </div>
+
+        <div id="timedate">
+            <a id="mon">January</a>&nbsp;
+            <a id="d">1</a>,&nbsp;
+            <a id="y">0</a>&nbsp;
+            <a id="h">12</a> :
+            <a id="m">00</a>:
+            <a id="s">00</a>
+          </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><b>Administrator</b></button>
+            <div class="dropdown-content">
+              <a href="homenotlogin.html">Sign out</a>
+              <a href="/HTML/changepass.html">Change Password</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="navbarlist">
+                <li><a href="/HTML/homesignedin.html"><button>Dashboard</button></a></li>
+                <li><a href="/HTML/managedata.html"><button>Manajemen Karyawan</button></a></li>
+                <li><a href="/HTML/tentangperusahaan.html"><button>Tentang Perusahaan</button></a></li>
+            </div>
+        </div>
+
+    <div class="right">
+        <div class="wrapper">
+            <div class="title">
+            <h1>Data Manager</h1>
+            <a href="/HTML/tambahdata.html"><button><i class="fa-solid fa-plus"></i> Tambahkan Data</button></a>
+            </div>
+            <hr>
+            <input type="text" id="myInput" onkeyup="searchbar()" 
+            placeholder="Masukkan nomor yang ingin dicari..." title="Type in a name">
+            <table id="tabel">
+                <tr>
+                    <td class="clickAble" onclick="sortusingNumber(0)">No Karyawan</td>
+                    <td class="clickAble" onclick="sortusingAlphabet(1)">Nama Karyawan</td>
+                    <td class="clickAble" onclick="sortusingNumber(2)">Gaji Karyawan ($ Dollar)</td>
+                    <td class="clickAble" onclick="sortusingAlphabet(3)">Jabatan</td>
+                    <td class="clickAble" onclick="sortusingAlphabet(4)">Ditambahkan Oleh</td>
+                    <td class="tanggal">Tanggal Ditambahkan</td>
+                    <td class="option">Option</td>
+                </tr>
+                <tr>
+                    <td>1021</td>
+                    <td>Christopher Bryan Mulyono</td>
+                    <td>5.500</td>
+                    <td>Supervisor</td>
+                    <td>Bos</td>
+                    <td>10/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1032</td>
+                    <td>Tom Hanks</td>
+                    <td>2.500</td>
+                    <td>Karyawan</td>
+                    <td>Supervisor</td>
+                    <td>11/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1043</td>
+                    <td>Jennifer Lawrence</td>
+                    <td>2.700</td>
+                    <td>Karyawan</td>
+                    <td>Supervisor</td>
+                    <td>11/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1054</td>
+                    <td>Bill Gates</td>
+                    <td>8.500</td>
+                    <td>Bos</td>
+                    <td>Administrator</td>
+                    <td>11/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1065</td>
+                    <td>Emma Watson</td>
+                    <td>2.450</td>
+                    <td>Karyawan</td>
+                    <td>Supervisor</td>
+                    <td>11/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1076</td>
+                    <td>Gal Gadot</td>
+                    <td>2.650</td>
+                    <td>Karyawan</td>
+                    <td>Supervisor</td>
+                    <td>11/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1087</td>
+                    <td>Scarlett Johansson</td>
+                    <td>2.520</td>
+                    <td>Karyawan</td>
+                    <td>Supervisor</td>
+                    <td>11/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                    <td>1098</td>
+                    <td>Johnny Depp</td>
+                    <td>5.500</td>
+                    <td>Supervisor</td>
+                    <td>Bos</td>
+                    <td>10/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                </tr>
+                    <td>1109</td>
+                    <td>Brad Pitt</td>
+                    <td>2.670</td>
+                    <td>Karyawan</td>
+                    <td>Supervisor</td>
+                    <td>11/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+                </tr>
+                    <td>1110</td>
+                    <td>Tom Cruise</td>
+                    <td>2.480</td>
+                    <td>Karyawan</td>
+                    <td>Supervisor</td>
+                    <td>11/07/2022</td>
+                    <td><button>Edit</button>
+                    <br><br><button>Delete</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="/JS/managedata.js"></script>
+</html>

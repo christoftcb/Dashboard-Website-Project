@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/home.css">
+</head>
+<body onLoad="initClock()">
+    <div class="page">
+        <div class="header">
+        <div class="text">
+            <p>Perusahaan X</p>
+        </div>
+
+        <div id="timedate">
+            <a id="mon">January</a>&nbsp;
+            <a id="d">1</a>,&nbsp;
+            <a id="y">0</a>&nbsp;
+            <a id="h">12</a> :
+            <a id="m">00</a>:
+            <a id="s">00</a>
+          </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><b>Administrator</b></button>
+            <div class="dropdown-content">
+              <a href="homenotlogin.html">Sign out</a>
+              <a href="/HTML/changepass.html">Change Password</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="navbarlist">
+                <li><a href="/HTML/homesignedin.html"><button>Dashboard</button></a></li>
+                <li><a href="/HTML/managedata.html"><button>Manajemen Karyawan</button></a></li>
+                <li><a href="/HTML/tentangperusahaan.html"><button>Tentang Perusahaan</button></a></li>
+            </div>
+        </div>
+
+    <div class="right">
+        <div class="rightup">
+            <h1>Dashboard Statistik Perusahaan X</h1>
+            <hr>
+            <div class="containercard">
+                <div class="card1">
+                    <div class="cardcontentup">
+                        <div class="leftcard">
+                        <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="rightcard">
+                            <p>16</p>
+                            <p>Total Karyawan</p>
+                        </div>
+                    </div>
+                    <div class="cardcontentdown">
+                        <p>Tampilkan semua</p>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div class="cardcontentup">
+                        <div class="leftcard">
+                            <i class="fa-solid fa-person-circle-check"></i>
+                        </div>
+                        <div class="rightcard">
+                            <p>10</p>
+                            <p>Sudah Absen</p>
+                        </div>
+                    </div>
+                    <div class="cardcontentdown">
+                        <p>Tampilkan semua</p>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="cardcontentup">
+                        <div class="leftcard">
+                            <i class="fa-solid fa-person-circle-xmark"></i>
+                        </div>
+                        <div class="rightcard">
+                            <p>4</p>
+                            <p>Belum Absen</p>
+                        </div>
+                    </div>
+                    <div class="cardcontentdown">
+                        <p>Tampilkan semua</p>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="card4">
+                    <div class="cardcontentup">
+                        <div class="leftcard">
+                            <i class="fa-solid fa-person-circle-xmark"></i>
+                        </div>
+                        <div class="rightcard">
+                            <p>2</p>
+                            <p>Ijin</p>
+                        </div>
+                    </div>
+                    <div class="cardcontentdown">
+                        <p>Tampilkan semua</p>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rightdown">
+            <h2>Info User</h2>
+            <hr>
+     
+        <div class="infouser">
+            <div class="leftinfouser">
+                <div class="leftuser">
+                    <p>Nama Lengkap</p>
+                    <p>Username</p>
+                    <p>Email</p>
+                    <p>No. HP</p>
+                    <p>Alamat</p>
+                </div>
+
+                <div class="rightuser">
+                    <p>: Administrator</p>
+                    <p>: admin</p>
+                    <p>: admin@gmail.com</p>
+                    <p>: 083873539641</p>
+                    <p>: Jakarta Barat</p>
+                </div>
+            </div>
+
+            <div class="rightinfouser">
+                <div class="leftuser">
+                    <p>Last Login</p>
+                    <p>IP Address</p>
+                    <p>Server</p>
+                    <p>Browser</p>
+                </div>
+
+                <div class="rightuser">
+                    <p>: 15-07-2022</p>
+                    <p>: 1</p>
+                    <p>: localhost</p>
+                    <p>: Google Chrome</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="/JS/home.js"></script>
+</html>

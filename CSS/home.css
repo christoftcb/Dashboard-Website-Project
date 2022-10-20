@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    background-color: #121212;
+    display: flex;
+    color: white;
+    width: auto;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+#timedate {
+    text-align:center;
+    color:#fff;
+    display: flex;
+    background-color: #121212;
+  }
+
+#timedate a{
+    background-color: #121212;
+}
+
+.text p{
+    background-color: #121212;
+}
+
+.dropbtn {
+    background-color: #121212;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn *{
+    background-color: #121212;
+  }
+
+  .dropdown {
+    color: white;
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #121212;
+    width: 100%;
+    padding: 7.5px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #121212;
+  }
+  
+  .dropdown-content a:hover {background-color: #121212;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #121212;}
+
+  .dropdown:hover .dropbtn {color: rgb(148, 147, 147);;}
+
+.content{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.left{
+    width: 15%;
+    height: 100%;
+    background: #121212;
+}
+
+.navbarlist li{
+    list-style: none;
+    word-wrap: break-word;
+}
+
+.navbarlist button{
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: rgb(148, 147, 147);
+    padding: 15px;
+    font-size: 20px;
+    background: #121212;
+    cursor: pointer;
+}
+
+.navbarlist button:hover{
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+.right{
+   width: 85%;
+   height: 100%;
+}
+
+.right h1{
+    padding: 15px;
+}
+.right hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.right i{
+    font-size: 25px;
+}
+
+.containercard{
+    margin-top: 40px;
+    display: flex;
+    word-wrap: break-word;
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+
+.card1{
+    width: 20%;
+    font-size: 20px;
+    background-color: mediumslateblue;
+    color: white;
+    border: solid mediumslateblue;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.cardcontentup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardcontentup i{
+    font-size: 60px;
+}
+
+.cardcontentup .rightcard{
+    text-align: right;
+}
+
+.card1 .cardcontentdown{
+    padding: 15px;
+    background-color: white;
+    color: mediumslateblue;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card2{
+    width: 20%;
+    font-size: 20px;
+    background-color: springgreen;
+    color: white;
+    border: solid springgreen;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.card2 .cardcontentdown{
+    padding: 15px;
+    background-color: white;
+    color: springgreen;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card3{
+    width: 20%;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: solid red;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.card3 .cardcontentdown{
+    padding: 15px;
+    background-color: white;
+    color: red;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card4{
+    width: 20%;
+    font-size: 20px;
+    background-color: orange;
+    color: white;
+    border: solid orange;
+    word-wrap: break-word;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card4 .cardcontentdown{
+    padding: 15px;
+    background-color: white;
+    color: orange;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightdown{
+    margin-top: 25px;
+    width: 100%;
+}
+.rightdown h2{
+    padding: 20px;  
+}
+
+.infouser{
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+}
+
+.leftinfouser{
+    width: 50%;
+    display: flex;
+    word-break: break-all;
+    justify-content: space-between;
+}
+
+.rightinfouser{
+    width: 50%;
+    display: flex;
+    word-break: break-all;
+    justify-content: space-between;
+}
+
+.infouser .leftuser{
+    padding: 20px;
+}
+
+.infouser .rightuser{
+    padding: 20px;
+}
+
+.right .block{
+    width: 100%;
+    display: flex;
+    word-wrap: break-word;
+}
+
+.right .block p{
+    padding: 25px;
+    margin-top: 25px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.right .block i{
+    padding: 25px;
+    font-size: 50px;
+    color: red;
+}
+
+@media screen and (max-width: 500px) {
+    .right{
+        text-align: center;
+    }
+    .containercard{
+        display: block;
+        width: 100%;
+    }
+    .card1{
+        width: 50%;
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+    .card2{
+        width: 50%;
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+    .card3{
+        width: 50%;
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+    .card4{
+        width: 50%;
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+    .left{
+        min-height: 250vh;
+    }
+    .infouser{
+        font-size: 10px;
+    }
+}
+  
